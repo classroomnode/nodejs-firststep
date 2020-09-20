@@ -6,7 +6,7 @@
 - [Hello World](#hello-world)
 - [REPL Terminal](#repl-terminal)
 - [Basics](#basics)
-    * [Primitive Types](#primitiv-types)
+    * [Primitive Types](#primitive-types)
     * [Loose Typing](#loose-typing)
     * [Object Literal](#object-literal)
     * [Functions](#functions)
