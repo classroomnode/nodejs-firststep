@@ -117,3 +117,53 @@ Node.js includes an additional data type called Buffer (not available in browser
 
 ## process object
 Each Node.js script runs in a process. It includes process object to get all the information about the current process of Node.js application.
+
+# Modules
+Module in Node.js is a simple or complex functionality organized in single or multiple JavaScript files which can be reused throughout the Node.js application.
+
+Each module in Node.js has its own context, so it cannot interfere with other modules or pollute global scope. Also, each module can be placed in a separate .js file under a separate folder.
+
+## Module Types
+* Core Modules
+* Local Modules
+* Third Party Modules
+
+### Core Modules
+Core Module | Description
+------------|-------------
+http        | http module includes classes, methods and events to create Node.js http server.
+url         | url module includes methods for URL resolution and parsing.
+querystring | querystring module includes methods to deal with query string.
+path        | path module includes methods to deal with file paths.
+fs          | fs module includes classes, methods, and events to work with file I/O.
+util        | util module includes utility functions useful for programmers.
+
+### Local Modules
+Local modules are modules created locally in your Node.js application. These modules include different functionalities of your application in separate files and folders.
+
+## Export Modules
+The `module.exports` is a special object which is included in every JavaScript file in the Node.js application by default. The `module` is a variable that represents the current module, and `exports` is an object that will be exposed as a module. So, whatever you assign to `module.exports` will be exposed as a module.
+
+### Export Literal
+> module.exports = 'Hello world';
+### Export Object
+> exports.SimpleMessage = 'Hello world';
+//or
+module.exports.SimpleMessage = 'Hello world';
+
+> module.exports.log = function (msg) { 
+    console.log(msg);
+};
+### Export Function
+> module.exports = function (msg) { 
+    console.log(msg);
+};
+> 
+### Export Function as Class
+> module.exports = function (firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.fullName = function () { 
+        return this.firstName + ' ' + this.lastName;
+    }
+}
