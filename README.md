@@ -12,10 +12,10 @@
     * [Functions](#functions)
     * [Buffer](#buffer)
     * [process object](#process-object)
+- [Modules](#modules)
 - [Package Manager(NPM)](#package-manager-npm)
 - [Brief Intro to Modern Javascript](#brief-intro-to-modern-javascript)
 - [Callbacks and Events](#callbacks-and-events)
-- [Modules](#modules)
 - [Express Framework](#express-framework)
 - [Restful API](#restful-api)
 - [Packaging](#packaging)
@@ -167,3 +167,27 @@ module.exports.SimpleMessage = 'Hello world';
         return this.firstName + ' ' + this.lastName;
     }
 }
+
+# Package Manager (NPM)
+Node Package Manager (NPM) is a command line tool that installs, updates or uninstalls Node.js packages in your application. It is also an online repository for open-source Node.js packages
+
+## Check Version
+> npm -v
+
+## For NPM Help
+> npm help
+
+## Install Package Locally
+> npm install [package name]
+
+## Add dependency into package.json
+> npm install [package name] --save
+
+## Install Package Globally
+> npm install -g [package name]
+
+## Update Package
+> npm update [package name]
+
+## Uninstall Package
+> npm uninstall [package name]
