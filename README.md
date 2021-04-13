@@ -191,3 +191,13 @@ Node Package Manager (NPM) is a command line tool that installs, updates or unin
 
 ## Uninstall Package
 > npm uninstall [package name]
+
+# Brief Intro to Modern Javascript
+* ES6 - ECMA Script
+* Variables and Block Scope
+* Arrow Function
+* Object Literals
+* Destructuring and Rest/Spread Operator
+* Template Strings
+* Classes
+* Promises and async/await
